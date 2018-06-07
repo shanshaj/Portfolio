@@ -71,30 +71,6 @@ header img {
     padding: 3em;
 }
 
-/*=========BIG STRUCTURE==========*/
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-}
-.flex-leftside {
-    width: 250px;
-    align-content: stretch;
-    position:fixed;
-    top:0;
-}
-
-.flex-rightside {
-    padding-left: 2em;
-    width: 80%;  
-    margin-left: 250px;   
-}
-
-.flower{
-    will-change: transform; 
-    transition:transform 1.2s ease-in-out;
-    transition-timing-function: cubic-bezier(.28,.63,.77,.92)
-    
-}
 
 /*======NAVIGATION======*/
 
@@ -127,7 +103,7 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: none;
 /*    letter-spacing: 20px;*/
-    color: rgba(252, 26, 161, 1);
+    color: rgba(255, 255, 255, 1);
     transition: 0.5s;
 }
 
@@ -240,7 +216,7 @@ figure:hover figcaption {
 }
 
 .one {
-    width: 800px;
+    width: 60%;
     height: auto;
     display: block;
     margin: auto;
@@ -249,7 +225,7 @@ figure:hover figcaption {
 .content_text img{
     display: block;
     margin:auto;
-    width: 500px;
+    width: 80%;
 }
 
 /*
@@ -268,23 +244,24 @@ figure:hover figcaption {
 }
 
 .content_img img {
-    width: 500px;
+    width: 75%;
     display: inline-block;
     margin: auto;
 }
 
 .content_img_center img{
-    width: 80%;
+    width: 75%;
     display: block;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 img.i1, img.i2 {
-    width: 400px;
+    width: 50%;
 }
 
 img.i3 {
-    width: 800px;
+    width: 80%;
 }
 
 .content_img {
@@ -292,7 +269,7 @@ img.i3 {
 }
 
 .features img{
-    width: 550px;
+    width: 70%;
 }
 
 .features {
@@ -319,6 +296,68 @@ footer p {
 
 @media screen and (max-width: 750px) {
 
+.content_text {
+    margin: 3% 10%;
+}
+
+.one {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+} 
+
+.features {
+        margin: 0 10% 15% 10%;
+        width: 80%
+    }
+    .features img {
+        margin-bottom: 1em;
+    }
+    
+    .features h5 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+
+.text2 {
+    margin-top: 0;
+}
+
+.text3 {
+    margin-top: 0;
+}
+    
+    .features img {
+        width: 80%;
+        margin: 0 10%;
+    }
     
     
+    .navigation {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    overflow: hidden;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    font-weight: 500;
+    color:black;
+    display: inline-block;
+    padding: 5px 5px 10px 5px;
+    letter-spacing: 3px;
+}    
+    
+    nav ul li {
+    margin-right: 0px;
+}
+    
+    div.withme {
+       margin-top: 100px; 
+    }
 }

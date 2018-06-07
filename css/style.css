@@ -29,11 +29,25 @@ h3 {
     padding-bottom: 1em;
 }
 
+h4 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
 h5 {
     font-size: 1.5em;
     font-weight: 500;
     padding: .5em 0;
     color: #707070;
+}
+
+h6 {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-top: 1em;
+    margin: 0 3em;
+    border-top: 1px solid #fff;
 }
 
 p, em {
@@ -75,8 +89,7 @@ header img {
 .flower{
     will-change: transform; 
     transition:transform 1.2s ease-in-out;
-    transition-timing-function: cubic-bezier(.28,.63,.77,.92)
-    
+    transition-timing-function: cubic-bezier(.28,.63,.77,.92)  
 }
 
 footer p {
@@ -91,6 +104,9 @@ footer p {
     position: fixed;
     left: 0;
     z-index: 100;
+    background: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    overflow: hidden;
 }
 
 nav {
@@ -108,14 +124,14 @@ nav ul li a {
     font-weight: 500;
     color:black;
     display: inline-block;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     letter-spacing: 3px;
 }
 
 nav ul li a:hover {
     text-decoration: none;
 /*    letter-spacing: 20px;*/
-    color: rgba(252, 26, 161, 1);
+    color: rgba(255, 255, 255, 1);
     transition: 0.5s;
 }
 
@@ -125,20 +141,17 @@ nav.gallery {
     margin-right: 20px;
 }
 
+.resume {
+    padding:1em;
+    background: #E0E0E0;
+    border-radius: 5px;
+}
+.resume0 {
+    margin-top: 1em;
+}
+
 
 /*======BODY======*/
-.flex-leftside {
-    background: #fcf;   
-}
-
-.flex-middleside {
-    background: #ccf;
-}
-
-.flex-rightside {
-    background: #cfc;
-}
-
 .heading {
     margin-top: 100px;
 }
@@ -216,14 +229,14 @@ img.shaddow-j {
 
 img.shaddow-n {
     width: 350px;
-    right:4vw;
+    right:8vw;
     top: 31vh;
 }
 
 img.typing-hand {
-    width:500px;
+    width:80%;
     position: absolute;
-   top: 75px;
+    top: 75px;
 }
 
 
@@ -258,11 +271,14 @@ div.gallery {
 	100% {opacity:1;}
 }
 */
+
+
+
 .gallery img {
     width: 100%;
 }
 
-.first-row {
+.first-row, .first-row2, .first-row3 {
     margin-top: 100px; 
     margin-bottom: 30px
 }
@@ -283,10 +299,15 @@ div.withme img {
 }
 */
 div.gallery div {
-    padding: 0 15px;
+    padding: 0 0;
 }
 figure {
     overflow: hidden;
+/*    background: rgba(85, 130, 222, 1)*/
+}
+
+a figure.xj {
+        margin: 0 15px;
 }
 
 figure img{
@@ -302,16 +323,18 @@ figure.xj:hover img {
 figcaption {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 15px;
 /*    background: rgba(255, 15, 159, 0.5);*/
-    background: rgba(239, 0, 107, 0.7);
-    width: 100%;
+    background: rgba(85, 130, 222, 0.8);
+
+    width: 93%;
     height: 100%;
     padding: 27% 0;
     color: #fff;
     opacity: 0; 
     text-align: center;
-    transition: opacity .4s ease-in-out;    
+    transition: opacity .4s ease-in-out;
+    overflow: hidden;
 }
 
 figure:hover figcaption {
@@ -335,12 +358,113 @@ ul {
 }
 /*============MEDIA=============*/
 
-@media screen and (max-width:1000px) {
-
+@media screen and (max-width:1200px) {
+.first-row2 {
+    margin-top: 0; 
+    margin-bottom: 30px;
 }
+    
 
 @media screen and (max-width: 750px) {
 
+    .first-row3 {
+        margin-top:0;
+        margin-bottom: 30px;
+    }
+    
+    img.typing-hand {
+    width:80%;
+    position: inherit;
+}
+    /*===IMAGES====*/
+    
+    img.i {
+    width:170px;
+    height:auto;
+    align-content: center;
+    position:fixed;
+    left: 30vw;
+    vertical-align: middle;
+    margin-top: 38vh;
+}
+
+img.flower {
+    width: 100px;
+    height:auto;
+}
+
+img.flower1 {
+    position:absolute;
+    top: 65vh;
+}
+
+img.flower2{
+    width: 100px;
+    position:absolute;
+    top: 16vh;
+    right: 23vw;
+}
+
+img.flower3 {
+    width: 120px;
+    height:auto;
+    position:absolute;
+    top: 80vh;
+    right: 2vw;
+}
+
+img.j, img.n {
+    width:200px;
+    height:auto;
+    position:absolute;
+    top: 28vh;
+}
+
+img.j {
+    left: 0;
+    top: 20vh;
+}
+
+img.n {
+    right: 4vw;
+    top: 60vh;
+}
+
+img.shaddow-j {
+    width: 230px;
+    position: absolute;
+    left:-5vw;
+    top: 20vh;
+}
+
+img.shaddow-n {
+    width: 230px;
+    position: absolute;
+    right: 0vw;
+    top: 60vh;
+}
+    
+    .navigation {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    overflow: hidden;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    font-weight: 500;
+    color:black;
+    display: inline-block;
+    padding: 5px 5px 10px 5px;
+    letter-spacing: 3px;
+}    
+    
+    nav ul li {
+    margin-right: 0px;
+}
     
     
 }

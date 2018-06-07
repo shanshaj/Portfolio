@@ -127,7 +127,7 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: none;
 /*    letter-spacing: 20px;*/
-    color: rgba(252, 26, 161, 1);
+    color: rgba(255, 255, 255, 1);
     transition: 0.5s;
 }
 
@@ -196,7 +196,7 @@ div.gallery div {
 */
 
 .one {
-    width: 600px;
+    width: 50%;
     height: auto;
     display: block;
     margin: auto;
@@ -206,7 +206,7 @@ div.gallery div {
 .content_text img{
     display: block;
     margin:auto;
-    width: 500px;
+    width: 80%;
 }
 
 /*
@@ -242,11 +242,11 @@ div.gallery div {
 }
 
 img.i1, img.i2 {
-    width: 600px;
+    width: 50%;
 }
 
 img.i3 {
-    width: 800px;
+    width: 70%;
     margin-top: 50px
 }
 
@@ -278,6 +278,7 @@ footer p {
 .inline-text {
     border-left: 2px solid #03E991;
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 .inline-text p{
     padding-left: 1em;
@@ -287,6 +288,12 @@ img.hundred {
     padding: 0;
     width: 100%;
 }
+
+img.design-process{
+    width: 80%;
+    padding: 50px 0;
+}
+
 /*============MEDIA=============*/
 
 @media screen and (max-width:1000px) {
@@ -295,6 +302,43 @@ img.hundred {
 
 @media screen and (max-width: 750px) {
 
+.content_text {
+    margin: 3% 10%;
+}  
+    
+    .one {
+        width: 80%;
+    }
+    
+    img.i1 {
+        width: 80%;
+    }
+    
+    .navigation {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    overflow: hidden;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    font-weight: 500;
+    color:black;
+    display: inline-block;
+    padding: 5px 5px 10px 5px;
+    letter-spacing: 3px;
+}    
+    
+    nav ul li {
+    margin-right: 0px;
+}
+    
+     div.withme {
+       margin-top: 100px; 
+    }
     
     
 }

@@ -28,7 +28,7 @@ h3 {
     font-weight: 700;
     padding-bottom: .5em;
     padding-top: 1em;
-    color: #224477;
+    color: #d82829;
 }
 
 h4 {
@@ -42,7 +42,7 @@ h5 {
     font-weight: 500;
     padding: .5em 0;
     padding-top: 1em;
-    color: #03E991;
+    color: #d82829;
 }
 
 h6{
@@ -196,7 +196,7 @@ div.gallery div {
 */
 
 .one {
-    width: 600px;
+    width: 50%;
     height: auto;
     display: block;
     margin: auto;
@@ -206,7 +206,7 @@ div.gallery div {
 .content_text img{
     display: block;
     margin:auto;
-    width: 500px;
+    width: 80%;
 }
 
 /*
@@ -221,11 +221,11 @@ div.gallery div {
 }
 .content ul {
     padding-left: 1.5em;
-    padding-bottom: .5em;
+    padding-bottom: 1.5em;
 }
 
 .content_img img {
-    width: 500px;
+    width: 50%;
     display: inline-block;
     margin: auto;
 }
@@ -255,7 +255,7 @@ img.i3 {
 }
 
 .features img{
-    width: 550px;
+    width: 50%;
 }
 
 .features {
@@ -276,11 +276,16 @@ footer p {
 }
 
 .inline-text {
-    border-left: 2px solid #03E991;
+    border-left: 2px solid #d82829;
     margin-top: 1em;
 }
 .inline-text p{
     padding-left: 1em;
+}
+
+.inline-text ul{
+    padding-left: 3em;
+    padding-bottom: 0;
 }
 
 img.hundred {
@@ -295,6 +300,43 @@ img.hundred {
 
 @media screen and (max-width: 750px) {
 
+.content_text {
+    margin: 3% 10%;
+}
+
+.one {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+    
+    .navigation {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.2);
+    height: 100px;
+    overflow: hidden;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    font-weight: 500;
+    color:white;
+    display: inline-block;
+    padding: 5px 5px 10px 5px;
+    letter-spacing: 3px;
+}    
+    
+    nav ul li {
+    margin-right: 0px;
+}
+    
+     div.withme {
+       margin-top: 100px; 
+    }
     
     
 }
