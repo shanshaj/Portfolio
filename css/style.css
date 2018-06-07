@@ -363,7 +363,14 @@ ul {
     margin-top: 0; 
     margin-bottom: 30px;
 }
+img.typing-hand {
+    display: none;
+}
     
+    .resume0 {
+    margin-bottom: 5em;
+    }
+}
 
 @media screen and (max-width: 750px) {
 
@@ -373,8 +380,7 @@ ul {
     }
     
     img.typing-hand {
-    width:80%;
-    position: inherit;
+    display: none;
 }
     /*===IMAGES====*/
     
@@ -466,5 +472,15 @@ nav ul li a {
     margin-right: 0px;
 }
     
+    img.about1 {
+        margin-top:100px;
+    }
+    .heading {
+    margin-top: 20px;
+}
+    
+    .resume0 {
+    margin-bottom: 5em;
+}
     
 }
