@@ -73,6 +73,7 @@ header img {
     display: flex;
     flex-wrap: nowrap;
 }
+
 .flex-leftside {
     width: 250px;
     align-content: stretch;
@@ -161,7 +162,17 @@ nav.gallery {
 }
 
 .introduction {
+    margin: 100px 0 100px 0;
+}
+
+.iframeHolder1 {
+    margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.gallery {
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 /*========IMAGES=========*/
@@ -189,13 +200,14 @@ img.flower {
 img.flower1 {
     position:absolute;
     top: 58vh;
+    left: 10vw;
 }
 
 img.flower2{
     width: 150px;
     position:absolute;
     top: 16vh;
-    right: 23vw;
+    right: 25vw;
 }
 
 img.flower3 {
@@ -203,7 +215,7 @@ img.flower3 {
     height:auto;
     position:absolute;
     top: 58vh;
-    right: 2vw;
+    right: 10vw;
 }
 
 img.j, img.n {
@@ -239,6 +251,14 @@ img.typing-hand {
     top: 75px;
 }
 
+img.gif {
+    width:800px;
+    background: #D1D9EC;
+}
+
+.zoo img{
+    padding:10%;
+}
 
 /*============Gallery============*/
 
@@ -307,7 +327,7 @@ figure {
 }
 
 a figure.xj {
-        margin: 0 15px;
+        margin: 0 3%;
 }
 
 figure img{
@@ -327,7 +347,7 @@ figcaption {
 /*    background: rgba(255, 15, 159, 0.5);*/
     background: rgba(85, 130, 222, 0.8);
 
-    width: 93%;
+    width: 94%;
     height: 100%;
     padding: 27% 0;
     color: #fff;
@@ -349,7 +369,12 @@ footer p {
 }
 
 div.comingsoon {
-    margin: 200px;
+    margin: 20% 20% 10% 20%;
+    text-align: center;
+}
+
+div.zoo-explain {
+    margin: 10% 20%;
     text-align: center;
 }
 
@@ -474,7 +499,7 @@ nav ul li a {
     
     img.about1 {
         margin-top:100px;
-    }
+}
     .heading {
     margin-top: 20px;
 }
@@ -483,4 +508,5 @@ nav ul li a {
     margin-bottom: 5em;
 }
     
+
 }
